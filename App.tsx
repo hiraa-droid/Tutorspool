@@ -1,20 +1,31 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
+// import "./global.css"
+// import React from "react";
+// import AppNavigator from "./src/navigation/AppNavigator";
+
+// export default function App() {
+//   return (
+//       <AppNavigator />
+//   );
+// }
+import "./global.css"
+
+import React from 'react';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { NavigationContainer } from '@react-navigation/native';
+import Toast from 'react-native-toast-message';
+import AppNavigator from './src/navigation/AppNavigator';
+import { AuthProvider } from './src/contexts/AuthContext';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaProvider>
+      <AuthProvider>
+        <NavigationContainer>
+          <AppNavigator />
+          <Toast />
+        </NavigationContainer>
+      </AuthProvider>
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
