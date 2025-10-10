@@ -2303,3 +2303,4 @@ const styles = StyleSheet.create({
   choiceRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 8 },
   choiceText: { marginLeft: 8, color: '#374151' },
 });
+
