@@ -15,7 +15,7 @@ import LoginScreen from '../screens/LoginScreen';
 import SignUpScreen from '../screens/SignUpScreen';
 import TutorProfileScreen from '../screens/TutorProfileScreen';
 import BookingScreen from '../screens/BookingScreen';
-
+import ChatbotScreen from '../screens/ChatbotScreen';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -36,6 +36,7 @@ function BottomTabs() {
           else if (route.name === 'Subjects') iconName = 'book-outline';
           else if (route.name === 'About') iconName = 'information-circle-outline';
           else if (route.name === 'Contact') iconName = 'call-outline';
+          else if (route.name === 'Chatbot') iconName = 'chatbubble-ellipses-outline';
 
           return <Ionicons name={iconName} size={22} color={color} />;
         },
@@ -46,6 +47,7 @@ function BottomTabs() {
       <Tab.Screen name="Subjects" component={SubjectsScreen} />
       <Tab.Screen name="About" component={AboutScreen} />
       <Tab.Screen name="Contact" component={ContactScreen} />
+      <Tab.Screen name="Chatbot" component={ChatbotScreen} />
     </Tab.Navigator>
   );
 }
@@ -81,6 +83,11 @@ export default function AppNavigator() {
       <Stack.Screen
         name="Booking"
         component={BookingScreen}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Chatbot"
+        component={ChatbotScreen}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>
