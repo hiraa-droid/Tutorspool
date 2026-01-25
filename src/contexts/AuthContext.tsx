@@ -292,7 +292,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const signIn = async (email: string, password: string): Promise<{ error?: string }> => {
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      const a = await signInWithEmailAndPassword(auth, email, password);
+      console.log('Signed in user:', a)
       return { error: undefined };
     } catch (error: any) {
       let message = 'Login failed';

@@ -237,6 +237,7 @@ export default function LoginScreen() {
 
     // Simple role-based navigation
     let route: keyof RootStackParamList = 'Main';
+    console.log('User Profile:', userProfile);
     if (userProfile) {
       if (userProfile.role === 'student') route = 'StudentDashboard';
       else if (userProfile.role === 'tutor') route = 'TutorDashboard';

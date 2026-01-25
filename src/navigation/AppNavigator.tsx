@@ -16,6 +16,9 @@ import SignUpScreen from '../screens/SignUpScreen';
 import TutorProfileScreen from '../screens/TutorProfileScreen';
 import BookingScreen from '../screens/BookingScreen';
 import ChatbotScreen from '../screens/ChatbotScreen';
+import StudentDashboardScreen from '../screens/student/StudentDashboard';
+import LearningGoalsScreen from '../screens/student/LearningGoals';
+import MySessionsScreen from '../screens/student/MySessions';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -90,6 +93,22 @@ export default function AppNavigator() {
         component={ChatbotScreen}
         options={{ headerShown: false }}
       />
+      <Stack.Screen
+        name="StudentDashboard"
+        component={StudentDashboardScreen}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Goals"
+        component={LearningGoalsScreen}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Tutors"
+        component={FindTutorsScreen}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen name="Sessions" component={MySessionsScreen} />
     </Stack.Navigator>
   );
 }
