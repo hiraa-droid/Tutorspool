@@ -59,7 +59,7 @@ export default function HomeScreen({ navigation }: Props) {
       {/* HERO */}
       <View style={{ paddingHorizontal: 24, paddingTop: 40, paddingBottom: 18 }}>
         {/* Trust Badge */}
-        <View
+        {/* <View
           style={{
             alignSelf: "center",
             flexDirection: "row",
@@ -85,7 +85,7 @@ export default function HomeScreen({ navigation }: Props) {
           <Text style={{ fontSize: 13, fontWeight: "600" }}>
             Trusted by 15,000+ students worldwide
           </Text>
-        </View>
+        </View> */}
 
         {/* Heading */}
         <View style={{ marginTop: 18, alignItems: "center" }}>
@@ -117,7 +117,7 @@ export default function HomeScreen({ navigation }: Props) {
         </Text>
 
         {/* Feature Pills (icons + labels) */}
-        <View
+        {/* <View
           style={{
             flexDirection: "row",
             justifyContent: "center",
@@ -131,7 +131,7 @@ export default function HomeScreen({ navigation }: Props) {
               <Text style={{ color: "#6B7280", fontSize: 13 }}>{s.label}</Text>
             </View>
           ))}
-        </View>
+        </View> */}
 
         {/* CTA Buttons */}
         <View style={{ marginTop: 18, alignItems: "center", gap: 12 }}>
@@ -164,7 +164,7 @@ export default function HomeScreen({ navigation }: Props) {
         </View>
 
         {/* Social Proof - avatars */}
-        <View
+        {/* <View
           style={{
             marginTop: 16,
             flexDirection: "row",
@@ -197,7 +197,7 @@ export default function HomeScreen({ navigation }: Props) {
           <Text style={{ color: "#6B7280", fontSize: 13 }}>
             <Text style={{ color: "#111827", fontWeight: "700" }}>500+</Text> students joined this week
           </Text>
-        </View>
+        </View> */}
       </View>
 
       {/* HERO IMAGE + FLOATING CARDS */}
@@ -293,7 +293,7 @@ export default function HomeScreen({ navigation }: Props) {
       </View>
 
       {/* STATS GRID */}
-      <View style={{ paddingHorizontal: 20, marginTop: 18 }}>
+      {/* <View style={{ paddingHorizontal: 20, marginTop: 18 }}>
         <View style={{ flexDirection: "row", justifyContent: "space-between", gap: 12 }}>
           {[
             { value: "15,000+", label: "Happy Students" },
@@ -307,7 +307,7 @@ export default function HomeScreen({ navigation }: Props) {
             </View>
           ))}
         </View>
-      </View>
+      </View> */}
 
       {/* FEATURES */}
       <View style={{ paddingHorizontal: 16, marginTop: 20 }}>
